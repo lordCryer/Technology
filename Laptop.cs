@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    public class Laptop
+    public class Laptop : Computer
     {
+        public int NumOfUsb { get; set; }
+        public Laptop(int numOfUsb, double ram, double screenSize, string oS) : base(ram, 13, oS)
+        {
+            NumOfUsb = numOfUsb;
+        }
+        public void StuffedCheetos(int numOfCheetos)
+        {
+            NumOfUsb -= numOfCheetos;
+        }
     }
 }

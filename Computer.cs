@@ -22,7 +22,7 @@ namespace Technology
         public void PrintStats ()
         {
             Console.WriteLine($"RAM: {Ram}{Environment.NewLine}" +
-                $"Screen Size: {ScreenSize}{Environment.NewLIne}" +
+                $"Screen Size: {ScreenSize}{Environment.NewLine}" +
                 $"OS: {OS}");
         }
         public void UpgradRam(double uRam)
